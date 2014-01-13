@@ -314,6 +314,7 @@ CGFloat const kBBPreviewControllerDefaultMaxZoomScale = 1.5;
     webView.backgroundColor = [UIColor clearColor];
     webView.scalesPageToFit = YES;
     webView.delegate = self;
+    webView.scrollView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
     [[self contentView] addSubview:webView];
 
     _webView = webView;
@@ -344,6 +345,7 @@ CGFloat const kBBPreviewControllerDefaultMaxZoomScale = 1.5;
                 webView.backgroundColor = [UIColor clearColor];
                 webView.scalesPageToFit = YES;
                 webView.delegate = self;
+                webView.scrollView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
                 [[self contentView] addSubview:webView];
 
                 _webView = webView;
